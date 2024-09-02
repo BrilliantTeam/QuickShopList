@@ -17,7 +17,7 @@ public final class QuickShopList extends JavaPlugin {
         reloadConfig();
         api = (QuickShopAPI) Bukkit.getPluginManager().getPlugin("QuickShop");
         Util.parseColours((YamlConfiguration) getConfig());
-        getLogger().info("QuickShop List Addon loading...");
+        getLogger().info("正在載入容器商店列表（/qs lsit）套件 ...");
         api.getCommandManager().registerCmd(CommandContainer.builder().executor(new ListCommand(this))
                 .permission("quickshop.list")
                 .prefix("list")
